@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt29d.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt31a.html"> Next </a>
+	</font>
+</center
+<head>
+<script>
+	function validateForm() {
+		var x = document.forms["myForm"]["fname"].value;
+		if (x == null || x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="demo_form.asp"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" name="Submit">
+</form>
+</body>
+</html>

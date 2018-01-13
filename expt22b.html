@@ -1,0 +1,43 @@
+<html>
+<body>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt22a.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt23a.html"> Next </a>
+	</font>
+</center
+<script>
+	function primeNumbers(num)
+	{
+		document.write('<table>');
+		if(num<2)
+			return false;
+		for(var i=2;i<num; i++)
+		{
+			if(num%i==0)
+				return false;
+		}
+		return true;
+	}
+	document.write('<tr>');
+	var counter=0;
+	for(var i=0;i<100;i++)
+	{
+		if(primeNumbers(i))
+		{
+			if(counter%10==0)
+			{
+				document.write('</tr><tr>');
+				counter=0;
+			}
+			counter++;
+			document.write('<td>'+i+'</td>');
+		}
+	}
+	document.write('</table>');
+</script>
+
+</body>
+</html>

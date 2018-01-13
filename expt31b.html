@@ -1,0 +1,31 @@
+<html>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt31a.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt32.html"> Next </a>
+	</font>
+</center
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>

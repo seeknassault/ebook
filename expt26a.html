@@ -1,0 +1,32 @@
+<html>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt25c.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt26b.html"> Next </a>
+	</font>
+</center
+<body><!-- This is a comment node! -->
+
+<p>Click the button get info about the body element's child nodes.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var c = document.body.childNodes;
+    var txt = "";
+    var i;
+    for (i = 0; i < c.length; i++) {
+        txt = txt + c[i].nodeName + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

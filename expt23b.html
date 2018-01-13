@@ -1,0 +1,28 @@
+<html>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt23a.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt23c.html"> Next </a>
+	</font>
+</center
+<body>
+	<p> Select a new car from the list.</p>
+	<select id="mySelect" onchange="myFuction()">
+	<option value="Audi">Audi
+	<option value="BMW">BMW
+	<option value="Volvo">Volvo
+	<option value="Honda">Honda
+	</select>
+	<p id="demo"></p>
+	<script>
+	function myFuction()
+	{
+		var x= document.getElementById("mySelect").value;
+		document.getElementById("demo").innerHTML="You Selected:"+x;
+	}
+	</script>
+
+</body>
+</html>

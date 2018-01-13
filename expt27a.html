@@ -1,0 +1,29 @@
+﻿<html>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt26g.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt27b.html"> Next </a>
+	</font>
+</center
+<body>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+<p>Click on Try it to append </p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+    var node = document.createElement(“li");
+    var textnode = document.createTextNode("Water");
+    node.appendChild(textnode);
+    document.getElementById("myList").appendChild(node);
+}
+</script>
+<br>
+
+</body>
+</html>

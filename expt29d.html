@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt29c.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt29e.html"> Next </a>
+	</font>
+</center
+<body onclick="myFunction()">
+
+<p>Click anywhere in the document to display the active element.</p>
+<input type="text" name="An input field">
+<button>A Button</button>
+<p id="demo"></p>
+<script>
+ function myFunction() {
+     var x = document.activeElement.tagName;
+	document.getElementById("demo").innerHTML =x;
+}	
+</script>
+</body>
+</html>

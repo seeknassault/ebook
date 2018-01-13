@@ -1,0 +1,28 @@
+<html>
+<a href="My e-book.html">My e-book</a><br>
+<center>
+	<font size="4">
+	<a href="expt26f.html"> Go Back</a> &emsp; &emsp; &emsp; &emsp;
+	<a href=" My e-book.html"> Home</a>&emsp; &emsp; &emsp; &emsp;
+	<a href="expt27a.html"> Next </a>
+	</font>
+</center
+<body>
+	<p>Example list:</p>
+	<ul>
+	<li id="myLI">Coffee</li>
+	<li>Tea</li>
+	</ul>
+	<p> Click the button to get parent node of li element in list.</p>
+	<button onclick="myFuction()">Try it!</button>
+	<p id="demo"></p>
+	<script>
+	function myFuction()
+	{
+		var x=document.getElementById("myLI").parentNode.nodeName;
+		document.getElementById("demo").innerHTML=x;
+	}
+	</script>
+
+</body>
+</html>
